@@ -26,8 +26,8 @@ public class Komposisi : MonoBehaviour
             "Coklat", "Lemak Kakao", "Kakao Massa", "Perisa Coklat", "Perisa Vanili",
             /* 13          14              15             16                17*/
             
-            "Sereal", "Maltodekstrin", "Pengembang", "Pengembang Nabati"
-            /* 18            19             20                  21*/
+            "Sereal", "Maltodekstrin", "Pengembang", "Pengembang Nabati", "Minyak Nabati"
+            /* 18            19             20                21                22*/
         };
     [SerializeField]
     public List<string> listAlergen = new List<string>(){
@@ -82,16 +82,16 @@ public class Komposisi : MonoBehaviour
         }
         else if (nama_produk == "kit-kat")
         {
-            listKomposisi.Add("komposisiUtama", new List<int> { });
-            listKomposisi.Add("listAlergen", new List<int> { });
+            listKomposisi.Add("komposisiUtama", new List<int> { 8, 2, 5, 15, 9, 22, 4, 13, 11, 12, 10, 6, 17 });
+            listKomposisi.Add("listAlergen", new List<int> { 2, 5, 7 });
             listKomposisi.Add("listPenguatRasa", new List<int> { });
-            listKomposisi.Add("listGula", new List<int> { });
+            listKomposisi.Add("listGula", new List<int> { 2 });
 
             /*
             _komposisi.text = "Gula, Susu bubuk full cream, Tepung terigu, Gandum, Mentega, " +
                 "Kakao massa, Lemak dan minyak nabati, Minyak sayuran kelapa sawit, Bubuk kakao, " +
                 "Pengemulsi lesitin kedelai, Makanan ragi, Pengembang natrium bikarbonat, Garam, " +
-                "Pengembang kalsium karbonat, Ragi, Perisa�vanilin";
+                "Pengembang kalsium karbonat, Ragi, Perisa vanilin";
             */
         }
         else
