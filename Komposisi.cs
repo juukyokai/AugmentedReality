@@ -26,8 +26,8 @@ public class Komposisi : MonoBehaviour
             "Coklat", "Lemak Kakao", "Kakao Massa", "Perisa Coklat", "Perisa Vanili",
             /* 13          14              15             16                17*/
             
-            "Sereal", "Maltodekstrin", 
-            /* 18            19 */
+            "Sereal", "Maltodekstrin", "Pengembang", "Pengembang Nabati"
+            /* 18            19             20                  21*/
         };
     [SerializeField]
     public List<string> listAlergen = new List<string>(){
@@ -69,10 +69,10 @@ public class Komposisi : MonoBehaviour
         }
         else if (nama_produk == "beng-beng")
         {
-            listKomposisi.Add("komposisiUtama", new List<int> { });
-            listKomposisi.Add("listAlergen", new List<int> { });
+            listKomposisi.Add("komposisiUtama", new List<int> { 8, 9, 14, 15, 18, 19, 10, 20});
+            listKomposisi.Add("listAlergen", new List<int> { 2, 3, 4, 5 });
             listKomposisi.Add("listPenguatRasa", new List<int> { });
-            listKomposisi.Add("listGula", new List<int> { });
+            listKomposisi.Add("listGula", new List<int> { 2, 1 });
 
             /*
             _komposisi.text = "Glukosa, Gula, Susu bubuk, Tepung terigu, Lemak nabati (mengandung dekstrosa BHA), " +
@@ -91,7 +91,7 @@ public class Komposisi : MonoBehaviour
             _komposisi.text = "Gula, Susu bubuk full cream, Tepung terigu, Gandum, Mentega, " +
                 "Kakao massa, Lemak dan minyak nabati, Minyak sayuran kelapa sawit, Bubuk kakao, " +
                 "Pengemulsi lesitin kedelai, Makanan ragi, Pengembang natrium bikarbonat, Garam, " +
-                "Pengembang kalsium karbonat, Ragi, Perisa vanilin";
+                "Pengembang kalsium karbonat, Ragi, Perisaï¿½vanilin";
             */
         }
         else
